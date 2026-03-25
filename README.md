@@ -48,53 +48,65 @@ It is designed to simulate real-world **SOC (Security Operations Center)** and *
   ```bash
   binwalk -e file
   binwalk -Me file
-4. Manual Analysis
+  ```
+### 4. Manual Analysis
 
 Inspect file content using:
-
+```bash
 strings file
 hexdump -C file
-5. Targeted Investigation
-
-Extract specific data using offsets:
-
+```
+### 5. Targeted Investigation
+- Extract specific data using offsets:
+```bash
 dd if=file bs=1 skip=<offset> count=<size>
-6. Reporting
-Document findings
-Explain risks and impact
-🔍 Key Concepts
-Hidden Data (Embedded Files)
-File Signatures
-Entropy (Randomness Detection)
-Recursive Extraction
-Manual Forensic Analysis
-🚨 Real-World Application
+```
+### 6. Reporting
+- Document findings
+- Explain risks and impact
+
+---
+
+## 🔍 Key Concepts
+- Hidden Data (Embedded Files)
+- File Signatures
+- Entropy (Randomness Detection)
+- Recursive Extraction
+- Manual Forensic Analysis
+
+---
+
+## 🚨 Real-World Application
 
 This project reflects real-world cybersecurity tasks such as:
+- Malware analysis
+- Incident response
+- Digital forensics
+- Threat investigation
+- Suspicious file analysis
 
-Malware analysis
-Incident response
-Digital forensics
-Threat investigation
-Suspicious file analysis
-🧠 Skills Gained
-File analysis and investigation
-Identifying hidden threats
-Practical use of forensic tools
-Analytical thinking in cybersecurity
-Writing professional security reports
-📝 Example Finding
+---
 
+## 🧠 Skills Gained
+- File analysis and investigation
+- Identifying hidden threats
+- Practical use of forensic tools
+- Analytical thinking in cybersecurity
+- Writing professional security reports
+
+---
+
+## 📝 Example Finding
 A normal image file was found to contain a hidden ZIP archive.
 The archive included sensitive data that was not visible during normal use.
 
 This demonstrates how attackers can hide information inside trusted file formats.
 
-💡 Key Takeaway
+---
 
-Not all files are what they appear to be.
-Always analyze beyond the surface.
+## 💡 Key Takeaway
+- Not all files are what they appear to be.
+- Always analyze beyond the surface.
 
-📎 Author
-
-Cybersecurity Enthusiast | SOC Analyst in Training
+## 📎 Author
+*Mudrik Mohamed | SOC Analyst in Training*
