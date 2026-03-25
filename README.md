@@ -94,6 +94,8 @@ This project reflects real-world cybersecurity tasks such as:
 - Analytical thinking in cybersecurity
 - Writing professional security reports
 
+![Binwalk Scan Output](Screenshot/Setup & First Scan .png)
+
 ---
 
 ## 📝 Example Finding
